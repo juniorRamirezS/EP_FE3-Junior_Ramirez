@@ -1,8 +1,14 @@
 import React from 'react'
+import styles from '../styles/Card.module.css'
 
-const Card = () => {
+const Card = ({ usuario }) => {
     return (
-        <div>Hola, soy una tarjeta</div>
+        <div className={styles.cardContainer}>
+            <div >Mascota: </div>
+            <div >{usuario.mascota}</div>
+            <div >Dueño: </div>
+            <div >{usuario.dueño}</div>
+        </div>
     )
 };
 
